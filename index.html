@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD</title>
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="loader hidden">
+        <img src="./rocket.svg" alt="Rocket Animation">
+    </div>
+    <!-- Result-Nav -->
+    <div class="nav-container result-nav">
+        <nav>
+            <ul class="nav-items">
+                <li><a href="#" onclick="updateDOM('favorites')">Favorites</a></li>
+                <li><a href="#" onclick="getNasaPictures()">Load More</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Favorites Nav -->
+    <div class="nav-container favorites-nav">
+        <nav>
+            <ul class="nav-items">
+                <li><a href="#" onclick="getNasaPictures()">Load More NASA Images</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Card -->
+    <div class=" card-container"></div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>ADDED!</h1>
+    </div>
+</body>
+
+</html>
